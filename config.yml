@@ -1,0 +1,47 @@
+# Kills needed to unlock the second ability (level 2)
+kills-to-unlock: 5
+
+# false = only player kills count, true = mob kills count too
+count-mob-kills: false
+
+# Players who join without a power get the in-world power roll (orbs circling them, no menu)
+assign-on-join: true
+
+# Seconds after joining before the roll starts (a countdown shows in the action bar)
+roll-delay-seconds: 5
+
+# Who abilities can hit besides other players:
+#   hostile = hostile mobs only (default, keeps villagers, pets and animals safe)
+#   players = other players only
+#   all     = every living thing (careful on an SMP)
+target-mode: hostile
+
+# Visual effects: 1.0 = normal, lower on busy servers (0.2 - 3.0)
+particle-density: 1.0
+
+# Particles around every player showing which power they have
+aura: true
+
+# fancy = turning magic circle, orbiting orbs and a signature per power; subtle = a few quiet particles
+aura-style: fancy
+
+# true = ability damage ignores armor, Protection and Resistance, so the target always
+# loses the full amount (a hit that is cancelled by a shield or a no-PvP region still does nothing).
+# false = normal damage, which armor can reduce to almost nothing.
+true-damage: true
+
+# Damage per hit in half hearts (2 = 1 heart). Set to 0 to make an ability harmless.
+damage:
+  void-pull: 3
+  void-rift-per-hit: 1.5       # every 0.5 s for 4 s, up to 8 hits
+  null-pulse: 3
+  light-beam: 8
+  solar-flare: 6
+  dark-veil: 3
+  soul-drain: 5
+  shadow-strike: 10
+  eclipse-flash: 4
+  totality-per-second: 3       # once per second for 4 s
+  star-fall-per-star: 5        # 8 stars
+  chaos-roll: 4
+  chaos-storm-per-strike: 6    # 6 strikes

@@ -1,0 +1,19 @@
+name: EclipsePowers
+version: 1.2.0
+main: dev.smp.eclipsepowers.EclipsePowers
+api-version: '1.21'
+description: Eclipse powers: rolled like a dice, two abilities each, unlocked by kills.
+
+commands:
+  power:
+    description: View your power or manage powers
+    usage: /power [list|set|kills|reroll|reload]
+    aliases: [powers]
+
+permissions:
+  eclipsepowers.use:
+    description: Use power abilities with the offhand key
+    default: true
+  eclipsepowers.admin:
+    description: Set powers, set kills, reroll powers and reload the config
+    default: op
